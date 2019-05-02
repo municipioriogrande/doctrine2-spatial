@@ -224,7 +224,7 @@ abstract class AbstractGeometry implements GeometryInterface
      */
     private function toStringPoint(array $point)
     {
-        return vsprintf('%s %s', $point);
+        return vsprintf('%F %F', $point);
     }
 
     /**
