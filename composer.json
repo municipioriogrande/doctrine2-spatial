@@ -10,6 +10,16 @@
         }
     ],
     "license": "MIT",
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/municipioriogrande/doctrine2-spatial.git"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/municipioriogrande/geo-parser.git"
+		}
+	],
     "require": {
         "doctrine/orm": ">=2.3",
         "creof/geo-parser": "dev-master",
