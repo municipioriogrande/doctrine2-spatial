@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Copyright (C) 2015 Derek J. Lambert
  *
@@ -45,7 +46,7 @@ class Point extends AbstractPoint implements GeographyInterface
      */
     public function setX($x)
     {
-        $parser = new Parser($x);
+        $parser = new Parser((string) $x);
 
         try {
             $x = (float) $parser->parse();
@@ -72,7 +73,7 @@ class Point extends AbstractPoint implements GeographyInterface
      */
     public function setY($y)
     {
-        $parser = new Parser($y);
+        $parser = new Parser((string) $y);
 
         try {
             $y = (float) $parser->parse();
